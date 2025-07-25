@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  font-size: 18px;
+}
+
+body, form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-size: 36px;
+  color: #ffffff;
+}
+
+form div {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#taskInput {
+  width: 300px;
+  padding: 10px 15px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+
+#taskInput::placeholder {
+  color: #888;
+}
+
+#addTaskBtn {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #03dac6;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#addTaskBtn:hover {
+  background-color: #00cbb4;
+}
+
+#taskList {
+  width: 80%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.task-item {
+  background-color: #1e1e1e;
+  border-left: 5px solid #03dac6;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.task-item li {
+  list-style: none;
+  font-size: 20px;
+  flex-grow: 1;
+}
+
+.delete-btn {
+  background-color: #cf6679;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: #b13b4c;
+}
